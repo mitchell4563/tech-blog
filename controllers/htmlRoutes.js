@@ -1,7 +1,7 @@
 // importing the express router, which allows for the creation of modular, mountable route handlers
 const router = require("express").Router();
 const bodyParser = require("body-parser");
-const {User, BlogPost} = require("../models");
+const {User, Post} = require("../models");
 router.use(bodyParser.json());
 
 
@@ -23,7 +23,7 @@ router.get("/signup", (req, res) => {
 router.get("/", async (req, res) => {
 
   try {
-    const dbPostData = await BlogPost.findAll({
+    const dbPostData = await Post.findAll({
       attributes: ["id", "title", "content"],
     });
     const posts = dbPostData.map((post) => post.get({ plain: true }));
