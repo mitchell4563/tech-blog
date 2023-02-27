@@ -1,9 +1,9 @@
 const User = require('./User');
-const BlogPost = require('./blogPost');
+const Post = require('./Post');
 const Comment = require('./Comment');
 
 module.exports = {
   User,
-  BlogPost,
+  Post,
   Comment
 };

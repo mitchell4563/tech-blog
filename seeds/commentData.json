@@ -1,0 +1,5 @@
+[
+    { "content": "What a great post!", "user_id": 2, "blog_post_id": 1 },
+    { "content": "I love it!", "user_id": 3, "blog_post_id": 1 },
+    { "content": "Wow! Who knew?", "user_id": 3, "blog_post_id": 2 }
+  ]
